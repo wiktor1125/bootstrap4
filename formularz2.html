@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Szablon Bootstrapa</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome, zob. How to Use: https://fontawesome.bootstrapcheatsheets.com -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- twoje style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Firma XD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+          <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+
+  <form>
+    <div class="form-group">
+      <label for="poleEmail">Adres email</label>
+      <input type="email" class="form-control" id="poleEmail" aria-describedby="emailHelp" placeholder="Wprowadź email">
+      <small id="emailHelp" class="form-text text-muted">Nikomu nie udostepniamy maili naszych użytkowników.</small>
+    </div>
+    <div class="form-group">
+      <label for="poleHasło">Hasło</label>
+      <input type="password" class="form-control" id="poleHasło" placeholder="Hasło">
+    </div>
+    <div class="form-group">
+      <label for="poleHasło2">Hasło(powtórz)</label>
+      <input type="password2" class="form-control" id="poleHasło2" placeholder="Hasło(powtórz)">
+    </div>
+<div class="form-row">
+
+    <div class="form-group col-md-4">
+      <label for="poleImię">Imię</label>
+      <input type="name" class="form-control" id="poleImię" placeholder="Imię">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="poleNazwisko">Nazwisko</label>
+      <input type="secondname" class="form-control" id="poleNazwisko" placeholder="Nazwisko">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="exampleFormControlSelect1">Grupa</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Wybierz grupę</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+    <fieldset class="my-3">
+      <legend>Wyślij email z potwierdzeniem:</legend>
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="opcjaRadio2" value="nie" checked>
+      <label class="form-check-label" for="exampleRadios2">Nie</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="opcjaRadio1" value="tak" checked>
+      <label class="form-check-label" for="exampleRadios1">Tak</label>
+    </div>
+  </fieldset>
+    <button type="submit" class="btn btn-primary">Zapisz wybór</button>
+
+  </form>
+</div>
+
+</body>
+</html>
